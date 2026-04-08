@@ -108,4 +108,4 @@ python src/model_training.py
 
 # 👤 Author
 
-Your Name
+Bingji Li
