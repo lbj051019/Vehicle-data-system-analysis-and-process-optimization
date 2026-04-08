@@ -1,0 +1,29 @@
+=== TRAIN Threshold by Fβ (Recall-priority) ===
+beta=2.00, threshold=0.125923, Train P=1.0000, R=1.0000, Fβ=1.0000
+
+=== TEST Metrics ===
+Recall=1.0000  Precision=0.8929  F1=0.9434  Fβ=0.9766  AP=1.0000
+Confusion Matrix (rows=True cols=Pred [Healthy, Fault]):
+[[22  3]
+ [ 0 25]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Healthy     1.0000    0.8800    0.9362        25
+       Fault     0.8929    1.0000    0.9434        25
+
+    accuracy                         0.9400        50
+   macro avg     0.9464    0.9400    0.9398        50
+weighted avg     0.9464    0.9400    0.9398        50
+
+
+=== RandomForest Feature Importance (Top 10) ===
+ 1. v_hf_frac_1k: 0.319096
+ 2. v_transient_rate_2k: 0.311466
+ 3. v_spec_kurt: 0.170537
+ 4. i_hf_frac_1k: 0.136336
+ 5. i_transient_rate_2k: 0.024083
+ 6. i_spec_kurt: 0.017540
+ 7. i_crest: 0.015073
+ 8. v_crest: 0.005869
